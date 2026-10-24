@@ -473,7 +473,6 @@ class TestGrokSignalExtraction:
         assert responses[0].has_tools is True
         assert responses[0].model == "grok-composer-2.5-fast"
 
-
     def test_turn_completed_backfills_tokens_after_user_flush(self, tmp_path):
         """If usage lands after the next user turn started, still attach tokens."""
         long = " ".join(["word"] * 50)
